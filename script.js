@@ -1,7 +1,7 @@
 "use strict";
 let weight = +prompt('Cekivizi bura yazin');
 let height = +prompt('Boyuvuzu bura yazin');
-let bMI = weight / (height * height);
+let bMI = weight / (height * height) * 10000;
 let cavab;
 
 if (bMI < 18 ){
@@ -19,7 +19,7 @@ if (bMI < 18 ){
 } else if(bMI >=36 && bMI < 41){
     cavab = "Siz, 4-ci dereceli artiq cekiden eziyyet cekirsiniz";
 } else{
-    cavab = "Sizin basinizda problem var;"
+    cavab = "Sizin basinizda problem var";
 }
 
 document.getElementById('h1').innerHTML = cavab
